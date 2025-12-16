@@ -38,8 +38,7 @@ The goal of this application is to provide an interactive educational environmen
 * **Interaction:** Extensive use of Drag & Drop, TrackBars, PictureBoxes, and ComboBoxes.
 * **Data Handling:** Runtime state management using static variables for seamless data flow between forms without an external database.
 
-## 📸 Screenshots
-*(Optional: Upload screenshots of the MapSelectionForm or EnergyForm here to make the repo look great!)*
+
 
 ## 📦 How to Run
 
