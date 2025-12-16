@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F607A0D4-00E5-4F80-A261-8D0BBCA12732}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SmartCamping</RootNamespace>
+    <AssemblyName>SmartCamping</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatForm.Designer.cs">
+      <DependentUpon>ChatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnergyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnergyForm.Designer.cs">
+      <DependentUpon>EnergyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventsForm.Designer.cs">
+      <DependentUpon>EventsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LightingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LightingForm.Designer.cs">
+      <DependentUpon>LightingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenuForm.Designer.cs">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NavigationForm.Designer.cs">
+      <DependentUpon>NavigationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderForm.Designer.cs">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PegsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PegsForm.Designer.cs">
+      <DependentUpon>PegsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapSelectionForm.Designer.cs">
+      <DependentUpon>MapSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShadesFormBitmap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShadesFormBitmap.Designer.cs">
+      <DependentUpon>ShadesFormBitmap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SummaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SummaryForm.Designer.cs">
+      <DependentUpon>SummaryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TourismForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TourismForm.Designer.cs">
+      <DependentUpon>TourismForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeatherMonitorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeatherMonitorForm.Designer.cs">
+      <DependentUpon>WeatherMonitorForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChatForm.resx">
+      <DependentUpon>ChatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnergyForm.resx">
+      <DependentUpon>EnergyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventsForm.resx">
+      <DependentUpon>EventsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LightingForm.resx">
+      <DependentUpon>LightingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuForm.resx">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationForm.resx">
+      <DependentUpon>NavigationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderForm.resx">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PegsForm.resx">
+      <DependentUpon>PegsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapSelectionForm.resx">
+      <DependentUpon>MapSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ShadesFormBitmap.resx">
+      <DependentUpon>ShadesFormBitmap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryForm.resx">
+      <DependentUpon>SummaryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TourismForm.resx">
+      <DependentUpon>TourismForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeatherMonitorForm.resx">
+      <DependentUpon>WeatherMonitorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shade1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shade2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shade3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShelterA.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShelterA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ΚαταφύγιοΑ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ΚαταφύγιοΒ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ΚαταφύγιοΓ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DefaultΧαρτης.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
